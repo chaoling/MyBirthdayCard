@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chaol.mybirthdaycard.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/androidparty"
+        android:id="@+id/birthdaycardimg"
+        android:scaleType="centerCrop"
+        android:onClick="changeImg"/>
+
+    <TextView
+        android:id="@+id/happybirthdayword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\t\t\t\tHappy Birthday Helen!\t\t\t\t\t"
+        android:textSize="36sp"
+        android:fontFamily="cursive"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="changeGreetings"
+        android:clickable="true"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@android:color/transparent"/>
+    <!--
+
+           android:ellipsize="marquee"
+           android:marqueeRepeatLimit="marquee_forever"
+           android:focusable="true"
+           android:focusableInTouchMode="true"
+           android:background="@android:color/transparent"
+           -->
+    <TextView
+        android:id="@+id/fromword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="36sp"
+        android:fontFamily="cursive"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="20dp"
+        android:text="From Chao"
+        android:onClick="changeSignature"
+        android:clickable="true"
+        android:background="@android:color/transparent"/>
+</RelativeLayout>
